@@ -25,4 +25,10 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
+void print_arrow() {
+  // call the print_triangle function. This will be the pointy part of the arrow.
+  print_triangle(5,5);
+  // call the print_square function. This will be base part of the arrow. 
+  print_square(8,5);
+}
 
